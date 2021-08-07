@@ -46,7 +46,9 @@ impl DerefMut for BitSet
 
 impl Contains for BitSet
 {
-  contains_deref_impl!(Self::Item);
+  fn contains(&self, value: &Self::Item) -> bool {
+    self.deref().contains(*value)
+  }
 }
 
 macro_rules! set_op_impl

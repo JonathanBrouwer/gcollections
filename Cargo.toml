@@ -19,7 +19,7 @@ path = "src/libgcollections/lib.rs"
 [dependencies]
 
 num = "^0.1.29"
-bit-set = "^0.2.0"
+bit-set = "^0.5.2"
 trilean = "^1.0.1"
 
 [features]
